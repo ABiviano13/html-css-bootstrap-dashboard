@@ -1,0 +1,35 @@
+.b-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.main-content,
+.content{
+    background-color: blueviolet;
+    flex-grow: 1;
+}
+
+/* main-content */
+.sidebar{
+    background-color: blanchedalmond;
+    width: 150px;
+    height: 100vh;
+    flex-shrink: 0;
+    position: fixed;
+    left: 0;
+}
+
+.content{
+    overflow: scroll;
+}
