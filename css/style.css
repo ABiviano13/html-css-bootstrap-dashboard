@@ -9,9 +9,15 @@ menu{
     list-style: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 :root{
     --white--: #f8f9fa;
     --blue--: #1B72E8;
+    --bluedark--: #13293f;
+    --orange--: #ff8f00;
 }
 
 .b-content{
@@ -90,7 +96,7 @@ menu{
 }
 
 .main-header .btn-secondary{
-    color: #ff8f00;
+    color: var(--orange--);
 }
 
 @media screen and (min-width: 992px) {
@@ -116,7 +122,7 @@ menu{
 
 .sidebar{
     background-image: url(../img/sidebar-bg.png);
-    background-color: #13293f;
+    background-color: var(--bluedark--);
     width: 70px;
     height: 100%;
     flex-shrink: 0;
@@ -215,10 +221,39 @@ menu{
 }
 
 .bg-reset{
-    background-color: #ff8f00;
+    background-color: var(--orange--);
     color: black;
 }
 
+.row-content{
+    flex-direction: column;
+}
+
+.btn-outline-secondary{
+    border: 1px solid currentColor;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.icon-button-table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-code{
+    background-color: var(--orange--);
+    color: white;
+    padding: 3px 2px;
+    margin: 3px;
+    border-radius: 999px;
+}
+
+.td-mobile-none{
+    display: none;
+}
 
 @media  screen and (min-width: 768px) {
     .row-control{
@@ -228,6 +263,14 @@ menu{
 
     .col-students{
         justify-content: end;
+    }
+
+    .row-content{
+        flex-direction: row;
+    }
+
+    .td-mobile-none{
+        display: revert;
     }
 }
 
