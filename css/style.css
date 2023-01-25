@@ -19,7 +19,7 @@ menu{
 .main-header{
     background-color: #f8f9fa;
     padding: 0.5rem;
-    height: auto;
+    height: 70px;
     width: 100%;
     flex-shrink: 0;
     position: fixed;
@@ -38,7 +38,8 @@ menu{
 .main-header > .navbar{
     --bs-navbar-padding-y: 0;
     --bs-navbar-brand-padding-y: 0;
-    background-color: #fafafa;
+    margin-top: 8px;
+    background-color: #ffff;
 }
 
 .navbar > .container-fluid{
@@ -93,11 +94,12 @@ menu{
 .main-content{
     display: flex;
 }
+
 .sidebar{
     background-image: url(../img/sidebar-bg.png);
     background-color: #13293f;
     width: 70px;
-    height: 96vh;
+    height: calc(100% - 70px);
     flex-shrink: 0;
     position: fixed;
     left: 0;
@@ -115,7 +117,7 @@ menu{
 /* sidebar */
 .container-sidebar,
 .list-sidebar{
-    height: 97%;
+    height: calc(100% - 39px);
 }
 
 .list-sidebar{
