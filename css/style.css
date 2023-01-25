@@ -255,6 +255,11 @@ img{
     display: none;
 }
 
+.card-link{
+    color: var(--blue--);
+    text-decoration: underline;
+}
+
 @media  screen and (min-width: 768px) {
     .row-control{
         flex-direction: row;
