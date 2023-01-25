@@ -29,7 +29,6 @@ menu{
 
 .main-content,
 .content{
-    background-color: blueviolet;
     flex-grow: 1;
 }
 
@@ -40,6 +39,14 @@ menu{
     --bs-navbar-brand-padding-y: 0;
     margin-top: 8px;
     background-color: #ffff;
+}
+
+.desktop-logo{
+    display: none;
+}
+
+.mobile-logo{
+    width: 40px;
 }
 
 .navbar > .container-fluid{
@@ -87,6 +94,16 @@ menu{
 @media screen and (min-width: 992px) {
     .item-novisible{
         display: block;
+    } 
+}
+
+@media screen and (min-width: 1200px){
+    .desktop-logo{
+        display: block;
+    }
+
+    .mobile-logo{
+        display: none;
     }
 }
 
@@ -107,7 +124,7 @@ menu{
 }
 
 .content{
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .mb-3 {
@@ -163,4 +180,10 @@ menu{
     background-color: lightgray;
     padding: 3px;
 
+}
+
+/* content */
+.content .row > *{
+    border: 1px solid black;
+    padding: 20px;
 }
